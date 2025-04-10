@@ -186,11 +186,15 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   
   // Card flipping
+  const flashcard = document.getElementById('flashcard');
+  if (flashcard) {
   flashcard.addEventListener('click', (e) => {
     // Don't flip when clicking tabs
     if (e.target.closest('button')) return;
     flashcard.classList.toggle('flipped');
+    console.log('Card flipped'); // Add this for debugging
   });
+ }
 
   // Initialize
   populateTopics();
