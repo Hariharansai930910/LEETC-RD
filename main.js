@@ -57,7 +57,11 @@ document.addEventListener('DOMContentLoaded', function() {
   function selectTopic(topicId) {
     selectedTopicId = topicId;
     currentProblemIndex = 0;
-    
+
+    // Hide topic section and show flashcard section
+    document.getElementById('topic-section').classList.add('hidden');
+    document.getElementById('flashcard-section').classList.remove('hidden');
+     
     topicSection.classList.add('hidden');
     flashcardSection.classList.remove('hidden');
     
@@ -66,6 +70,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
     loadProblem();
   }
+  // Back button functionality
+   document.getElementById('back-button').addEventListener('click', () => {
+   document.getElementById('flashcard-section').classList.add('hidden');
+   document.getElementById('topic-section').classList.remove('hidden');
+   });
 
   // Load current problem
   function loadProblem() {
