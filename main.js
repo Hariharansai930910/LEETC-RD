@@ -1,5 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
   // For debugging purposes
+  document.addEventListener('DOMContentLoaded', function() {
+  console.log("DOM fully loaded");
+  console.log("Question tab found:", !!document.getElementById('question-tab'));
+  console.log("Hint tab found:", !!document.getElementById('hint-tab'));
+  console.log("One-liner tab found:", !!document.getElementById('one-liner-tab'));
+  
+  // Your existing code continues here...
+});
   console.log("DOM fully loaded and parsed");
   
   // DOM elements
