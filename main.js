@@ -167,6 +167,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('three-liner-content').classList.add('hidden');
     document.getElementById('mnemonic-content').classList.add('hidden');
     document.getElementById('code-content').classList.add('hidden');
+    setActiveBackTab('one-liner-tab', 'one-liner-content');
   });
   
   document.getElementById('three-liner-tab').addEventListener('click', () => {
@@ -178,6 +179,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('one-liner-content').classList.add('hidden');
     document.getElementById('mnemonic-content').classList.add('hidden');
     document.getElementById('code-content').classList.add('hidden');
+    setActiveBackTab('three-liner-tab', 'three-liner-content');
   });
   
   document.getElementById('mnemonic-tab').addEventListener('click', () => {
@@ -189,6 +191,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('one-liner-content').classList.add('hidden');
     document.getElementById('three-liner-content').classList.add('hidden');
     document.getElementById('code-content').classList.add('hidden');
+    setActiveBackTab('mnemonic-tab', 'mnemonic-content');
   });
   
   document.getElementById('code-tab').addEventListener('click', () => {
@@ -200,6 +203,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('one-liner-content').classList.add('hidden');
     document.getElementById('three-liner-content').classList.add('hidden');
     document.getElementById('mnemonic-content').classList.add('hidden');
+    setActiveBackTab('code-tab', 'code-content');
   });
   
   // Card flipping
